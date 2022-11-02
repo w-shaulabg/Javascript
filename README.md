@@ -2,10 +2,6 @@
 
 ステップ１: cloneする
 
-```
-git clone git@github.com:tech-quest/blog_modal.git
-```
-
 ステップ２: Dockerのコンテナを立ち上げる
 
 ```
