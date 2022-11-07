@@ -25,6 +25,5 @@ excuteButton.addEventListener("click", (event) => {
   };
 
   fetchResult();
-
   console.log("ここが一番最初に実行される");
 });
