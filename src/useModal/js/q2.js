@@ -1,8 +1,8 @@
 //「モーダルテストボタン」を押下したら、モーダルが表示されるような実装をしましょう！！
 // __の箇所に適切なものを書きましょう！
 
-const signInButton = document.querySelector("_______");
-const modalCloseButton = document.querySelector("_______");
+const signInButton = document.querySelector(".open-modal");
+const modalCloseButton = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 
 signInButton.addEventListener("click", function (event) {
