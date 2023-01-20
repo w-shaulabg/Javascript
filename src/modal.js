@@ -21,12 +21,14 @@ closeModalButton.addEventListener('click', (event) => {
 });
 
 /*
+classListは特定の要素のクラス名を追加したり、
+削除したり、参照したりすることが出来る便利なプロパティ
  * modal以外をクリックしたときの示非表示処理
  */
-modal.addEventListener('click', (evemt) => {
-  if(event.target.closest('.modal__container') === null) {
+modal.addEventListener('click', e => {
+  if (event.target.closest('.modal__container') === null) {
     modal.classList.remove('show');
     modal.classList.add('hide');
-    // alert('外側をクリックされました。') ← こちらもやってみるとおもろいです！！
+    modal.classList.alert('外側をクリックされました。');
   }
 });
