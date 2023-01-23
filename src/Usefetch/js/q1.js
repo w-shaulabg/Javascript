@@ -1,7 +1,7 @@
 //ユーザー情報を取得してhtml出力してみよう！！
 // __の箇所に適切なものを書きましょう！
 
-fetch("_____")
+fetch("https://jsonplaceholder.typicode.com/users/1")
   .then((response) => {
     return response.json();
   })

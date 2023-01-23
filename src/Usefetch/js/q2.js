@@ -1,7 +1,7 @@
 //ユーザー情報を取得してhtml出力してみよう！！
 // __の箇所に適切なものを書きましょう！
 
-fetch("_____")
+fetch("https://jsonplaceholder.typicode.com/users/1")
   .then((response) => {
     return response.json();
   })
@@ -14,7 +14,7 @@ fetch("_____")
           <p><span>email: </span>${user.email}</p>
           <p><span>phone: </span>${user.phone}</p>
         `;
-    const output = document.querySelector("_____");
+    const output = document.querySelector(".output-area");
     output.innerHTML = userInfo;
   })
   .catch((error) => {
