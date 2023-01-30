@@ -5,21 +5,21 @@ const excuteButton = document.querySelector('.excute');
 
 excuteButton.addEventListener('click', (event) => {
 
-  const fetchData = _____() => {
-    return ___ _____((resolve, reject) => {
+  const fetchData = async () => {
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
-        _____("ここが２番目に実行される。(3秒後)");
+        resolve("ここが２番目に実行される。(3秒後)");
       }, 3000);
     });
   };
 
-  const fetchResult = _____() => {
-    const result = _____ fetchData();
+  const fetchResult = async () => {
+    const result = await fetchData();
     console.log("result:", result);
   };
-  
+
   fetchResult();
 
-  console.log("ここが一番最初に実行される");  
-  
+  console.log("ここが一番最初に実行される");
+
 });
