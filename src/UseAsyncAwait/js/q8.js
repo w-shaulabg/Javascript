@@ -3,15 +3,15 @@
 
 const url = 'https://jsonplaceholder.typicode.com/users/1';
 
-const fetchUser = _____() => {
-  const response = await _____(url);
-  const result = _____ response.json();
+const fetchUser = async () => {
+  const response = await fetch(url);
+  const result = await response.json();
   console.log("res", result);
   return result;
 };
 
-const outputData = _____() => {
-  const user = _____ fetchUser();
+const outputData = async () => {
+  const user = await fetchUser();
   const userInfo = `
     <p><span>id: </span>${user.id}</p>
     <p><span>name: </span>${user.name}</p>
